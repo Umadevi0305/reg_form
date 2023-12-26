@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="registerForm" onsubmit="return validateRegister()">
+                <h2>Register</h2>
+                <label for="regName">Name:</label>
+                <input type="text" id="regName" name="regName" required>
+                <br>
+
+                <label for="regRollNumber">Roll Number:</label>
+                <input type="text" id="regRollNumber" name="regRollNumber" required>
+                <br>
+
+                <label for="regDob">Date of Birth:</label>
+                <input type="date" id="regDob" name="regDob" required>
+                <br>
+
+                <label for="regGender">Gender:</label>
+                <select id="regGender" name="regGender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+
+                <label for="regEmail">Email:</label>
+                <input type="email" id="regEmail" name="regEmail" required>
+                <br>
+
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="regPassword" required>
+                <br>
+
+                <label for="regCollege">College Name:</label>
+                <input type="text" id="regCollege" name="regCollege" required>
+                <br>
+
+                <label for="regDepartment">Department:</label>
+                <select id="regDepartment" name="regDepartment" required>
+                    <option value="cse">CSE</option>
+                    <option value="csm">CSM</option>
+                    <option value="csc">CSC</option>
+                    <option value="csd">CSD</option>
+                    <option value="iot">IoT</option>
+                </select>
+                <br>
+
+                <input type="submit" value="Register">
+                <span id="registerError" class="error"></span>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
